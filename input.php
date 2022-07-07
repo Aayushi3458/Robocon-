@@ -23,6 +23,10 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -83,7 +87,7 @@
           <p>Team Details</p>
         </div>
         <div class="formbox" style="background-color:white; border-radius:15px;box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);text-align:left;overflow-x:auto;">
-           <form action="/action_page.php">
+           <!--form action="/action_page.php">
             <label for="fname">A:</label>
             <input type="text" id="fname" name="fname"><br><br>
             <label for="lname">B:</label>
@@ -93,8 +97,123 @@
             <label for="lname">D:</label>
             <input type="text" id="fname" name="lname"><br><br>
             <input type="submit" value="Submit">
-           </form>
+           </form-->
+            <div class="column">
+            <div class="row"> 
+            <h3 style="text-align:center">Team 1</h3>
+            <div class="dropdown" style="text-align:center">
+              <button class="btn btn-primary" type="button" data-toggle="dropdown">Team Name
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+              <li><a href="#">A.C.Patil College of Engineering</a></li>
+              <li><a href="#">A.D. Patel Institute of Technology</a></li>
+              <li><a href="#">Ajay Kumar Garg Engineering College</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team:ASSAULT)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: NOVA)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: Innovators)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: ALPHA)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: Vitality)</a></li>
+              <li><a href="#">Birla Vishvakarma Mahavidyalaya</a></li>
+              <li><a href="#">BRACT's Vishwakarma Institute of Technology</a></li>
+              <li><a href="#">College of Engineering</a></li>
+              <li><a href="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</a></li>
+              <li><a href="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</a></li>
+              <li><a href="#">Government College of Engineering and Research Avasari Khurd</a></li>
+              <li><a href="#">Government College of Engineering</a></li>
+              <li><a href="#">Government Engineering College	</a></li>
+              <li><a href="#">Gujarat Technological University</a></li>
+              <li><a href="#">Institute of Technology, Nirma University</a></li>
+              <li><a href="#">JSPM Rajarshi shahu college of engineering</a></li>
+              <li><a href="#">K.J. Somaiya Institute of Engineering and Information Technology</a></li>
+              <li><a href="#">Kalinga Institute of Industrial Technology</a></li>
+              <li><a href="#">KJ Somaiya College of Engineering</a></li>
+              <li><a href="#">LD College of Engineering</a></li>
+              <li><a href="#">LJ University</a></li>
+              <li><a href="#">Mahindra University</a></li>
+              <li><a href="#">Manipal Institute of Technology</a></li>
+              <li><a href="#">Marathwada Mitra Mandal's College of Engineering</a></li>
+              <li><a href="#">MIT Academy of Engineering</a></li>
+              <li><a href="#">MIT World Peace University</a></li>
+              <li><a href="#">MIT-ADT University</a></li>
+              <li><a href="#">MKSSS's Cummins College Of Engineering For Women</a></li>
+              <li><a href="#">P.E.S. Modern College of Engineering</a></li>
+              <li><a href="#">Padmabhooshan Vasantdada Patil Institute of Technology</a></li>
+              <li><a href="#">Parul Institute of Technology, Parul University</a></li>
+              <li><a href="#">Pimpri Chinchwad College of Engineering</a></li>
+              <li><a href="#">Presidency University</a></li>
+              <li><a href="#">Pune Institute of Computer Technology</a></li>
+              <li><a href="#">Sardar Patel College of Engineering</a></li>
+              <li><a href="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</a></li>
+              <li><a href="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</a></li>
+              <li><a href="#">SRM Institute of Science and Technology, KTR Campus</a></li>
+              <li><a href="#">St. Francis Institute of Technology</a></li>
+              <li><a href="#">SVKM's Dwarkadas J Sanghvi College of Engineering</a></li>
+              <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
+              <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
+              </ul>
+          </div>
+          <table></table>
+    </div>         
+            </div>
+            <div class="row" style="margin-top:1%">
+            <h3 style="text-align:center">Team 2</h3>
+            <div class="dropdown" style="text-align:center">
+              <button class="btn btn-primary" type="button" data-toggle="dropdown">Team Name
+              <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+              <li><a href="#">A.C.Patil College of Engineering</a></li>
+              <li><a href="#">A.D. Patel Institute of Technology</a></li>
+              <li><a href="#">Ajay Kumar Garg Engineering College</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team:ASSAULT)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: NOVA)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: Innovators)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: ALPHA)</a></li>
+              <li><a href="#">Bannari Amman Institute of Technology (Team: Vitality)</a></li>
+              <li><a href="#">Birla Vishvakarma Mahavidyalaya</a></li>
+              <li><a href="#">BRACT's Vishwakarma Institute of Technology</a></li>
+              <li><a href="#">College of Engineering</a></li>
+              <li><a href="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</a></li>
+              <li><a href="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</a></li>
+              <li><a href="#">Government College of Engineering and Research Avasari Khurd</a></li>
+              <li><a href="#">Government College of Engineering</a></li>
+              <li><a href="#">Government Engineering College	</a></li>
+              <li><a href="#">Gujarat Technological University</a></li>
+              <li><a href="#">Institute of Technology, Nirma University</a></li>
+              <li><a href="#">JSPM Rajarshi shahu college of engineering</a></li>
+              <li><a href="#">K.J. Somaiya Institute of Engineering and Information Technology</a></li>
+              <li><a href="#">Kalinga Institute of Industrial Technology</a></li>
+              <li><a href="#">KJ Somaiya College of Engineering</a></li>
+              <li><a href="#">LD College of Engineering</a></li>
+              <li><a href="#">LJ University</a></li>
+              <li><a href="#">Mahindra University</a></li>
+              <li><a href="#">Manipal Institute of Technology</a></li>
+              <li><a href="#">Marathwada Mitra Mandal's College of Engineering</a></li>
+              <li><a href="#">MIT Academy of Engineering</a></li>
+              <li><a href="#">MIT World Peace University</a></li>
+              <li><a href="#">MIT-ADT University</a></li>
+              <li><a href="#">MKSSS's Cummins College Of Engineering For Women</a></li>
+              <li><a href="#">P.E.S. Modern College of Engineering</a></li>
+              <li><a href="#">Padmabhooshan Vasantdada Patil Institute of Technology</a></li>
+              <li><a href="#">Parul Institute of Technology, Parul University</a></li>
+              <li><a href="#">Pimpri Chinchwad College of Engineering</a></li>
+              <li><a href="#">Presidency University</a></li>
+              <li><a href="#">Pune Institute of Computer Technology</a></li>
+              <li><a href="#">Sardar Patel College of Engineering</a></li>
+              <li><a href="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</a></li>
+              <li><a href="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</a></li>
+              <li><a href="#">SRM Institute of Science and Technology, KTR Campus</a></li>
+              <li><a href="#">St. Francis Institute of Technology</a></li>
+              <li><a href="#">SVKM's Dwarkadas J Sanghvi College of Engineering</a></li>
+              <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
+              <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
+              </ul>
+          </div>
+          <table></table>
+            </div>
+          </div>
 
+  </div>
+</div>
 
       </div>
       </div>
