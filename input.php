@@ -96,62 +96,66 @@ include 'connect.php';
         </div>
         <div class="formbox" style="background-color:white; border-radius:15px;box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);text-align:center;overflow-x:auto;">
         <form name="Teamform" action="connect.php" method="POST" enctype="multipart/form-data">    
+        <form action="/action_page.php">
+          <label for="quantity">Match Number:</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="120">
+        </form>
         <div class="column">
             <div class="row"> 
             <h3 style="text-align:center">Team 1</h3>
-            <div class="dropdown">
-              <button class="btn btn-primary" type="button" data-toggle="dropdown">Team Name
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-              <li><a href="#">A.C.Patil College of Engineering</a></li>
-              <li><a href="#">A.D. Patel Institute of Technology</a></li>
-              <li><a href="#">Ajay Kumar Garg Engineering College</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team:ASSAULT)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: NOVA)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: Innovators)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: ALPHA)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: Vitality)</a></li>
-              <li><a href="#">Birla Vishvakarma Mahavidyalaya</a></li>
-              <li><a href="#">BRACT's Vishwakarma Institute of Technology</a></li>
-              <li><a href="#">College of Engineering</a></li>
-              <li><a href="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</a></li>
-              <li><a href="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</a></li>
-              <li><a href="#">Government College of Engineering and Research Avasari Khurd</a></li>
-              <li><a href="#">Government College of Engineering</a></li>
-              <li><a href="#">Government Engineering College	</a></li>
-              <li><a href="#">Gujarat Technological University</a></li>
-              <li><a href="#">Institute of Technology, Nirma University</a></li>
-              <li><a href="#">JSPM Rajarshi shahu college of engineering</a></li>
-              <li><a href="#">K.J. Somaiya Institute of Engineering and Information Technology</a></li>
-              <li><a href="#">Kalinga Institute of Industrial Technology</a></li>
-              <li><a href="#">KJ Somaiya College of Engineering</a></li>
-              <li><a href="#">LD College of Engineering</a></li>
-              <li><a href="#">LJ University</a></li>
-              <li><a href="#">Mahindra University</a></li>
-              <li><a href="#">Manipal Institute of Technology</a></li>
-              <li><a href="#">Marathwada Mitra Mandal's College of Engineering</a></li>
-              <li><a href="#">MIT Academy of Engineering</a></li>
-              <li><a href="#">MIT World Peace University</a></li>
-              <li><a href="#">MIT-ADT University</a></li>
-              <li><a href="#">MKSSS's Cummins College Of Engineering For Women</a></li>
-              <li><a href="#">P.E.S. Modern College of Engineering</a></li>
-              <li><a href="#">Padmabhooshan Vasantdada Patil Institute of Technology</a></li>
-              <li><a href="#">Parul Institute of Technology, Parul University</a></li>
-              <li><a href="#">Pimpri Chinchwad College of Engineering</a></li>
-              <li><a href="#">Presidency University</a></li>
-              <li><a href="#">Pune Institute of Computer Technology</a></li>
-              <li><a href="#">Sardar Patel College of Engineering</a></li>
-              <li><a href="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</a></li>
-              <li><a href="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</a></li>
-              <li><a href="#">SRM Institute of Science and Technology, KTR Campus</a></li>
-              <li><a href="#">St. Francis Institute of Technology</a></li>
-              <li><a href="#">SVKM's Dwarkadas J Sanghvi College of Engineering</a></li>
-              <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
-              <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
-              </ul>
-              <br><br>
-          </div>
-          </div> 
+            <form action="/action_page.php">
+              <label for="team1" style="text-align:left">Team Name</label>
+              <select id="team1" name="team1" style="width:70%">
+              <option value="#" >A.C.Patil College of Engineering</option>
+              <option value="#">A.D. Patel Institute of Technology</option>
+              <option value="#">Ajay Kumar Garg Engineering College</option>
+              <option value="#">Bannari Amman Institute of Technology (Team:ASSAULT)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: NOVA)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: Innovators)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: ALPHA)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: Vitality)</option>
+              <option value="#">Birla Vishvakarma Mahavidyalaya</option>
+              <option value="#">BRACT's Vishwakarma Institute of Technology</option>
+              <option value="#">College of Engineering</option>
+              <option value="#">College of Engineering</option>
+              <option value="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</option>
+              <option value="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</option>
+              <option value="#">Government College of Engineering and Research Avasari Khurd</option>
+              <option value="#">Government College of Engineering</option>
+              <option value="#">Government Engineering College</option>
+              <option value="#">Gujarat Technological University</option>
+              <option value="#">Institute of Technology, Nirma University</option>
+              <option value="#">JSPM Rajarshi shahu college of engineering</option>
+              <option value="#">K.J. Somaiya Institute of Engineering and Information Technology</option>
+              <option value="#">Kalinga Institute of Industrial Technology</option>
+              <option value="#">KJ Somaiya College of Engineering</option>
+              <option value="#">LD College of Engineering</option>
+              <option value="#">LJ University</option>
+              <option value="#">Mahindra University</option>
+              <option value="#">Manipal Institute of Technology</option>
+              <option value="#">Marathwada Mitra Mandal's College of Engineering</option>
+              <option value="#">MIT Academy of Engineering</option>
+              <option value="#">MIT World Peace University</option>
+              <option value="#">MIT-ADT University</option>
+              <option value="#">MKSSS's Cummins College Of Engineering For Women</option>
+              <option value="#">P.E.S. Modern College of Engineering</option>
+              <option value="#">Padmabhooshan Vasantdada Patil Institute of Technology</option>
+              <option value="#">Parul Institute of Technology, Parul University</option>
+              <option value="#">Pimpri Chinchwad College of Engineering</option>
+              <option value="#">Presidency University</option>
+              <option value="#">Pune Institute of Computer Technology</option>
+              <option value="#">Sardar Patel College of Engineering</option>
+              <option value="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</option>
+              <option value="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</option>
+              <option value="#">SRM Institute of Science and Technology, KTR Campus</option>
+              <option value="#">St. Francis Institute of Technology</option>
+              <option value="#">SVKM's Dwarkadas J Sanghvi College of Engineering</option>
+              <option value="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</option>
+              <option value="#">U.V.PATEL College of Engineering,Ganppat University</option>
+            </select>
+            
+            </form>
+           </div>
           <table>
                     <thread>
                       <tr>
@@ -182,58 +186,61 @@ include 'connect.php';
 
             <div class="row" style="margin-top:1%">
             <h3 style="text-align:center">Team 2</h3>
-            <div class="dropdown" style="text-align:center">
-              <button class="btn btn-primary" type="button" data-toggle="dropdown">Team Name
-              <span class="caret"></span></button>
-              <ul class="dropdown-menu">
-              <li><a href="#">A.C.Patil College of Engineering</a></li>
-              <li><a href="#">A.D. Patel Institute of Technology</a></li>
-              <li><a href="#">Ajay Kumar Garg Engineering College</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team:ASSAULT)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: NOVA)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: Innovators)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: ALPHA)</a></li>
-              <li><a href="#">Bannari Amman Institute of Technology (Team: Vitality)</a></li>
-              <li><a href="#">Birla Vishvakarma Mahavidyalaya</a></li>
-              <li><a href="#">BRACT's Vishwakarma Institute of Technology</a></li>
-              <li><a href="#">College of Engineering</a></li>
-              <li><a href="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</a></li>
-              <li><a href="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</a></li>
-              <li><a href="#">Government College of Engineering and Research Avasari Khurd</a></li>
-              <li><a href="#">Government College of Engineering</a></li>
-              <li><a href="#">Government Engineering College	</a></li>
-              <li><a href="#">Gujarat Technological University</a></li>
-              <li><a href="#">Institute of Technology, Nirma University</a></li>
-              <li><a href="#">JSPM Rajarshi shahu college of engineering</a></li>
-              <li><a href="#">K.J. Somaiya Institute of Engineering and Information Technology</a></li>
-              <li><a href="#">Kalinga Institute of Industrial Technology</a></li>
-              <li><a href="#">KJ Somaiya College of Engineering</a></li>
-              <li><a href="#">LD College of Engineering</a></li>
-              <li><a href="#">LJ University</a></li>
-              <li><a href="#">Mahindra University</a></li>
-              <li><a href="#">Manipal Institute of Technology</a></li>
-              <li><a href="#">Marathwada Mitra Mandal's College of Engineering</a></li>
-              <li><a href="#">MIT Academy of Engineering</a></li>
-              <li><a href="#">MIT World Peace University</a></li>
-              <li><a href="#">MIT-ADT University</a></li>
-              <li><a href="#">MKSSS's Cummins College Of Engineering For Women</a></li>
-              <li><a href="#">P.E.S. Modern College of Engineering</a></li>
-              <li><a href="#">Padmabhooshan Vasantdada Patil Institute of Technology</a></li>
-              <li><a href="#">Parul Institute of Technology, Parul University</a></li>
-              <li><a href="#">Pimpri Chinchwad College of Engineering</a></li>
-              <li><a href="#">Presidency University</a></li>
-              <li><a href="#">Pune Institute of Computer Technology</a></li>
-              <li><a href="#">Sardar Patel College of Engineering</a></li>
-              <li><a href="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</a></li>
-              <li><a href="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</a></li>
-              <li><a href="#">SRM Institute of Science and Technology, KTR Campus</a></li>
-              <li><a href="#">St. Francis Institute of Technology</a></li>
-              <li><a href="#">SVKM's Dwarkadas J Sanghvi College of Engineering</a></li>
-              <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
-              <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
-              </ul>
-              <br><br>
+            <div>
+            <form action="/action_page.php">
+              <label for="team2" style="float:left;border:none">Team Name</label>
+              <select id="team2" name="team2" style="width:70%;float:left">
+              <option value="#" >A.C.Patil College of Engineering</option>
+              <option value="#">A.D. Patel Institute of Technology</option>
+              <option value="#">Ajay Kumar Garg Engineering College</option>
+              <option value="#">Bannari Amman Institute of Technology (Team:ASSAULT)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: NOVA)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: Innovators)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: ALPHA)</option>
+              <option value="#">Bannari Amman Institute of Technology (Team: Vitality)</option>
+              <option value="#">Birla Vishvakarma Mahavidyalaya</option>
+              <option value="#">BRACT's Vishwakarma Institute of Technology</option>
+              <option value="#">College of Engineering</option>
+              <option value="#">College of Engineering</option>
+              <option value="#">Fr. Conceicao Rodrigues College of Engineering,Mumbai</option>
+              <option value="#">Fr. Conceicao Rodrigues Institute of Technology,Vashi</option>
+              <option value="#">Government College of Engineering and Research Avasari Khurd</option>
+              <option value="#">Government College of Engineering</option>
+              <option value="#">Government Engineering College</option>
+              <option value="#">Gujarat Technological University</option>
+              <option value="#">Institute of Technology, Nirma University</option>
+              <option value="#">JSPM Rajarshi shahu college of engineering</option>
+              <option value="#">K.J. Somaiya Institute of Engineering and Information Technology</option>
+              <option value="#">Kalinga Institute of Industrial Technology</option>
+              <option value="#">KJ Somaiya College of Engineering</option>
+              <option value="#">LD College of Engineering</option>
+              <option value="#">LJ University</option>
+              <option value="#">Mahindra University</option>
+              <option value="#">Manipal Institute of Technology</option>
+              <option value="#">Marathwada Mitra Mandal's College of Engineering</option>
+              <option value="#">MIT Academy of Engineering</option>
+              <option value="#">MIT World Peace University</option>
+              <option value="#">MIT-ADT University</option>
+              <option value="#">MKSSS's Cummins College Of Engineering For Women</option>
+              <option value="#">P.E.S. Modern College of Engineering</option>
+              <option value="#">Padmabhooshan Vasantdada Patil Institute of Technology</option>
+              <option value="#">Parul Institute of Technology, Parul University</option>
+              <option value="#">Pimpri Chinchwad College of Engineering</option>
+              <option value="#">Presidency University</option>
+              <option value="#">Pune Institute of Computer Technology</option>
+              <option value="#">Sardar Patel College of Engineering</option>
+              <option value="#">Sardar Vallabhbhai National Institute of Technology (SVNIT)</option>
+              <option value="#">Shri Guru Gobind Singhji Institute and Engineering and Technology</option>
+              <option value="#">SRM Institute of Science and Technology, KTR Campus</option>
+              <option value="#">St. Francis Institute of Technology</option>
+              <option value="#">SVKM's Dwarkadas J Sanghvi College of Engineering</option>
+              <option value="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</option>
+              <option value="#">U.V.PATEL College of Engineering,Ganppat University</option>
+            </select>
+            </form>
+            <br>
           </div>
+        
           <table>
                     <thread>
                       <tr>
