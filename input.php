@@ -1,3 +1,10 @@
+<?php
+$ps1 = $pt1 = $ss1= $st1 = $bs1 = $bt1 = "";
+$ps2 = $pt2 = $ss2= $st2 = $bs2 = $bt2 = "";
+include 'connect.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,6 +77,7 @@
                   <li><a href="guidance\stage3.php">Stage 3</a></li>
                 </ul>
           </li>
+
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,22 +94,12 @@
         <div class="section-title">
           <p>Team Details</p>
         </div>
-        <div class="formbox" style="background-color:white; border-radius:15px;box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);text-align:left;overflow-x:auto;">
-           <!--form action="/action_page.php">
-            <label for="fname">A:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">B:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <label for="fname">C:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">D:</label>
-            <input type="text" id="fname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-           </form-->
-            <div class="column">
+        <div class="formbox" style="background-color:white; border-radius:15px;box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);text-align:center;overflow-x:auto;">
+        <form name="Teamform" action="connect.php" method="POST" enctype="multipart/form-data">    
+        <div class="column">
             <div class="row"> 
             <h3 style="text-align:center">Team 1</h3>
-            <div class="dropdown" style="text-align:center">
+            <div class="dropdown">
               <button class="btn btn-primary" type="button" data-toggle="dropdown">Team Name
               <span class="caret"></span></button>
               <ul class="dropdown-menu">
@@ -151,10 +149,37 @@
               <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
               <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
               </ul>
+              <br><br>
           </div>
-          <table></table>
-    </div>         
-            </div>
+          </div> 
+          <table>
+                    <thread>
+                      <tr>
+                    <th style="text-align:center">Task</th>
+                    <th style="text-align:center">Score</th>
+                    <th style="text-align:center">Time</th>
+                     </tr>
+                    </thread>
+                    <tbody>
+                      <tr>
+                      <td>Piling</td>
+                      <td><input type="number" class="form-control" id ="ps1" name="ps1" /></td>
+                      <td><input type="number" class="form-control" id="pt1" name="pt1" /></td>
+                      </tr>
+                      <tr>
+                      <td>Shooting</td>
+                      <td><input type="number" class="form-control" id="S2" name="ss1" /></td>
+                      <td><input type="number" class="form-control" id="T2" name="st1" /></td>
+                      </tr>
+                      <tr>
+                      <td>Ball on Head</td>
+                      <td><input type="number" class="form-control" id="S2" name="bs1" /></td>
+                      <td><input type="number" class="form-control" id="T2" name="bt1" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
             <div class="row" style="margin-top:1%">
             <h3 style="text-align:center">Team 2</h3>
             <div class="dropdown" style="text-align:center">
@@ -207,18 +232,48 @@
               <li><a href="#">SVKM's NMIMS Mukesh Patel School of Technology Management and Engineering</a></li>
               <li><a href="#">U.V.PATEL College of Engineering,Ganppat University</a></li>
               </ul>
+              <br><br>
           </div>
-          <table></table>
+          <table>
+                    <thread>
+                      <tr>
+                    <th style="text-align:center">Task</th>
+                    <th style="text-align:center">Score</th>
+                    <th style="text-align:center">Time</th>
+                     </tr>
+                    </thread>
+                    <tbody>
+                      <tr>
+                      <td>Piling</td>
+                      <td><input type="number" class="form-control" id="S1" name="s1" /></td>
+                      <td><input type="number" class="form-control" id="T1" name="t1" /></td>
+                      </tr>
+                      <tr>
+                      <td>Shooting</td>
+                      <td><input type="number" class="form-control" id="S2" name="s2" /></td>
+                      <td><input type="number" class="form-control" id="T2" name="t2" /></td>
+                      </tr>
+                      <tr>
+                      <td>Ball on Head</td>
+                      <td><input type="number" class="form-control" id="S2" name="s2" /></td>
+                      <td><input type="number" class="form-control" id="T2" name="t2" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>
+                <?php if(isset($_GET['edit']) && $_GET['edit'] == 1) {?>
+          <div class="text-center"><input type="submit" name="update" style="background:green; border: 0; padding: 10px 24px; color: #fff; transition: 0.4s; border-radius: 4px;" value="Update"/></div>
+        <?php } else {?>
+          <div class="text-center"><input type="submit" name="submit" style="background:green; border: 0; padding: 10px 24px; color: #fff; transition: 0.4s; border-radius: 4px;" value="Submit"/></div>
+        <?php } ?>
+              </form>
+              </div>
             </div>
           </div>
-
-  </div>
-</div>
-
-      </div>
+        </div>
       </div>
     </section><!-- End Services Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -272,6 +327,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
 
 </body>
 

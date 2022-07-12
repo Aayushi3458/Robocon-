@@ -52,18 +52,18 @@
           <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
           <li class="dropdown"><a href="#" style="cursor:pointer"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="events\result.php">Result</a></li>
-                  <li><a href="events\ranking.php">Ranking</a></li>
-                  <li><a href="events\award.php">Awards</a></li>
-                  <li><a href="events\media.php">Media</a></li>
+                  <li><a href="../../events\result.php">Result</a></li>
+                  <li><a href="../../events\ranking.php">Ranking</a></li>
+                  <li><a href="../../events\award.php">Awards</a></li>
+                  <li><a href="../../events\media.php">Media</a></li>
                 </ul>
           </li>
           <li><a class="nav-link scrollto" style="cursor:pointer" href="teams.php">Team</a></li>
           <li class="dropdown"><a href="#" style="cursor:pointer"><span>Guidance</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="guidance\stage1.php">Stage 1</a></li>
-                  <li><a href="guidance\stage2.php">Stage 2</a></li>
-                  <li><a href="guidance\stage3.php">Stage 3</a></li>
+                  <li><a href="../../guidance\stage1.php">Stage 1</a></li>
+                  <li><a href="../../guidance\stage2.php">Stage 2</a></li>
+                  <li><a href="../../guidance\stage3.php">Stage 3</a></li>
                 </ul>
           </li>
         </ul>
